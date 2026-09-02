@@ -1,0 +1,7 @@
+# ModelSmith 依赖（Python 3.12+）
+numpy
+pandas
+scipy
+openpyxl
+# 论文 PDF 编译（内嵌 Typst，pip 包自带二进制）
+typst

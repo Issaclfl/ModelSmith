@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  offline-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: 审计器校准自检
+        run: python scripts/audit/selftest.py
+      - name: 求解设施自检（sandbox_run + run_stability）
+        run: |
+          python scripts/solve/sandbox_run.py --selftest
+          python scripts/solve/run_stability.py --selftest
+      - name: 全部脚本可编译
+        run: python -m compileall -q scripts examples sync_to_local.py
