@@ -1,6 +1,6 @@
 ---
 name: modelsmith
-description: 数学建模竞赛全流程求解器：确定性引擎打底、智能体自适应兜底、命题人范式论文产出。当用户提到"数学建模、数模竞赛、求解赛题、写数模论文、CUMCM、MCM"等时使用。产出可复现代码、验证过的数值结果与排版 PDF 论文。
+description: 数学建模竞赛全流程求解器：确定性引擎打底、智能体自适应兜底、命题人范式论文产出。当用户提到"数学建模、数模竞赛、求解赛题、写数模论文、CUMCM、MCM"等时使用。产出可复现代码、验证过的数值结果与排版 PDF 论文。An AI agent skill for mathematical modeling contests (CUMCM / MCM / ICM).
 ---
 
 # Modelsmith 数模求解工作流

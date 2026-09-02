@@ -1,5 +1,7 @@
 # ModelSmith — 数学建模竞赛求解技能
 
+> **An AI agent skill** that turns ZCode / Claude Code into a math-modeling contest team — solve, verify, and deliver a competition paper as PDF.
+
 ![CI](https://github.com/Issaclfl/ModelSmith/actions/workflows/ci.yml/badge.svg)
 
 一个装进 AI 编程助手的**数学建模竞赛求解技能**：确定性引擎打底、智能体自适应兜底、
